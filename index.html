@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/modals.css">
+
+    <title>Kenzie Habit</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <h1 >KenzieHabit</h1>
+        <div class="dropdown">
+          <img src="" alt="avatar">
+          <div class="dropdown-content">
+            <p id="editProfileBtn">Editar perfil</p>
+            <p id="logoutBtn">Logout</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="containerBottomHeader">
+      <div class="bottomHeader">
+          <div class="dadosUser">
+            <img src="https://i.pinimg.com/736x/cd/f1/99/cdf199fe046c0c5025dc1ca39901a514.jpg" alt="" class="avatar">
+            <h2 class="nameAvatar">Júlia Silva Camargo</h2>
+          </div>  
+      </div>
+    </div>
+    <main>
+      <div class="menuTarefas">
+        <h2 class="titleMenuTarefas">Tarefas</h2>
+        <div class="bottomAction">
+          <button type="submit" name="todos" class="filterButton" id="btnTodos">Todos</button>
+          <button type="submit" name="concluidos" class="filterButton" id="btnConcluidos" >Concluidos</button>
+          <button type="submit" name="criar" class="createButton" id="btnCriar">Criar</button>
+        </div>
+      </div>
+      <div class="tabela">
+        <table>
+          <tr>
+            <th class="status">Status</th>
+            <th class="titulos">Titulo</th>
+            <th class="descricao">Descricao</th>
+            <th class="categria">Categoria</th>
+            <th class="editar">Editar</th>
+          </tr>
+        </table>
+      </div>
+      <div class="btnContainer">
+        <button type="submit" class="btnLoadMore" name="button">Carregar mais</button>
+      </div>
+      
+    </main>
+
+    <div id="modalCriarHabito">
+      <div class="container">
+        <div class="modalContent">
+          <div class="headerModal">   
+            <h2>Criar Hábito</h2>
+            <p id="closeCriarTask">X</p>
+          </div>  
+          <form action="#" class="formCriar">
+            <label for="title">Título</label>
+            <input type="text" placeholder="Digitar título" class="inputFormTitle" id="titleCreate">
+            <label for="description">Descrição</label>
+            <input type="text" name="description" placeholder="Digitar descrição" class="inputFormDescription" id="descriptionCreate">
+            <label for="category">Categoria</label>
+            <select name="category" placeholder="Escolha um categoria" class="selectCategory" id="categoryCreate">
+              <option value="saude">Saúde</option>
+              <option value="estudos">Estudos</option>
+              <option value="casa">Casa</option>
+              <option value="trabalho">Trabalho</option>
+              <option value="lazer">Lazer</option>
+            </select>
+            <button class="inserirButton" id="inserirBtn">Inserir</button>
+          </form>      
+        </div>
+      </div>
+    </div>
+
+    <div id="modalEditHabito">
+      <div class="container">
+        <div class="modalContent">  
+          <div class="headerModal">   
+            <h2>Editar Hábito</h2>
+            <p id="closeEditHabito">X</p>
+          </div>  
+          <form action="#" class="formCriar">
+            <input type="text" name="id" class="displayNone habitIdHolder"
+            id="habitIdHolder">
+            <label for="title">Título</label>
+            <input type="text"  class="inputFormTitle" id="inputTitle">
+            <label for="title">Descrição</label>
+            <input type="text"  class="inputFormDescription" id="inputDescription">
+            <select name="categria" placeholder="Escolha um categoria" class="selectCategory" id="select">
+              <option value="saude">Saúde</option>
+              <option value="estudos">Estudos</option>
+              <option value="casa">Casa</option>
+              <option value="trabalho">Trabalho</option>
+              <option value="lazer">Lazer</option>
+
+
+            </select>
+            <div class="statusDiv">
+              <span>Status</span>
+              <input type="checkbox" name="status" id="statusCheckbox">
+            </div>
+            <div class="btnsEdit" class="displayNone">
+              <button class="btnExcluir" id="btnExcluirTask">Excluir</button>
+              <button class="btnSalvar" id="btnSaveTaskChanges">Salvar alterações</button>
+            </div>      
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="modalEditPerfil">
+      <div class="container">
+        <div class="modalContent">  
+          <div class="headerModal">   
+            <h2>Editar perfil</h2>
+            <p id="closePerfil">X</p>
+          </div>
+          <form action="#" class="formCriar">
+            <label for="title">Nome</label>
+            <input type="text"  class="inputFormName" placeholder="Novo nome" id="editUsrNameInput">
+            <label for="title">URL da imagem do perfil</label>
+            <input type="text"  class="inputFormUrl" placeholder="Url foto de perfil" id="editUsrImageInput">
+            <button class="salvarButton" id="btnSaveProfileChanges">Salvar alterações</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="modalDeletarHabito">
+      <div class="container">
+        <div class="modalContent">  
+          <div class="headerModal">   
+            <h2>Excluir Hábito</h2>
+            <p id="closeApagarTask">X</p>
+          </div>
+         <div class="txtDel">
+          <h1>Certeza que deseja excluir este hábito?</h1>
+          <p>Após executar essa ação não será possível desfazer</p>
+         </div>
+         <div class="btnsDel">
+          <button class="btnCancelar" id="cancelar">Cancelar</button>
+          <button class="btnExcluir" id="excluir">Sim, excluir este hábito</button>
+        </div> 
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/scripts/index.scripts.js"></script>
+  </body>
+</html>
