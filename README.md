@@ -1,4 +1,6 @@
 # Projeto Capstone
+OBS: O projeto foi realizado no github do curso, faltando o versionamento realizado. 
+
 
 ## Principais conceitos
 
