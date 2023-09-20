@@ -1,6 +1,4 @@
-# 🏆 Entrega: Projeto Capstone
-
-Como já foi informado, você e sua equipe irão desenvolver um projeto durante essa semana. Colocando em prática os principais conceitos vistos até o momento em seu projeto. Esses conceitos são:
+# Projeto Capstone
 
 ## Principais conceitos
 
@@ -79,11 +77,11 @@ Como já foi informado, você e sua equipe irão desenvolver um projeto durante 
 
 ## Layout - Kenzie Habit
 
-Você e sua equipe deverão seguir o layout proposto, [Clique aqui](https://www.figma.com/file/3hcoHtXlfxGQjUhd4tb6G8/M2-CAPSTONE?node-id=2%3A232) para acessar o figma!
+Realizado o layuot proposto, [Clique aqui](https://www.figma.com/file/3hcoHtXlfxGQjUhd4tb6G8/M2-CAPSTONE?node-id=2%3A232) para acessar o figma!
 
 ## API - Kenzie Habits
 
-Você deverá seguir os padrões estabelecidos pela API, para realizar as requisições [Clique aqui](https://kenzie-academy-brasil-developers.github.io/habits-kenzie-doc/)
+[Clique aqui](https://kenzie-academy-brasil-developers.github.io/habits-kenzie-doc/)
 
 ## Iniciando desenvolvimento:
 
@@ -93,34 +91,25 @@ Ao clonar o repositório já será dada uma estrutura básica para o projeto. Es
 
 - **Assets:**
 
-  Nesta pasta são armazenados arquivos de imagens(png, svg, jpg), logos e icones
+  Armazenados arquivos de imagens(png, svg, jpg), logos e icones
 
 - **Models:**
 
-  Nas models ficam seus arquivos de classes referêntes a instâncias, como Pet, Pessoa, Empresa, Banco, etc
+  Arquivos de classes referêntes a instâncias, como Pet, Pessoa, Empresa, Banco, etc
 
 - **Controller:**
 
-  Nesta pasta serão feitas suas classes estáticas como requisições para API, criação de elementos DOM, uso das classes modelo entre outras funções que necessite
+  Classes estáticas como requisições para API, criação de elementos DOM, uso das classes modelo entre outras funções que necessite
 
 - **Views:**
 
-  Na pasta views, devem ser armazenados seus arquivos de páginas html, como dashboard, homepage, login, register, etc
+  Armazenados seus arquivos de páginas html, como dashboard, homepage, login, register, etc
 
 - **Script:**
 
-  Na pasta scripts são adicionados seus arquivos de js referentes as paginas, onde serão chamadas as funções vindas dos controller para realizar a construção da página
+  Adicionados arquivos de js referentes as paginas, onde serão chamadas as funções vindas dos controller para realizar a construção da página
 
 - **Css:**
 
-  Na pasta css são adicionados seus arquivos de estilização, reset.css, style.css, entre outros paginas de estilização que achar necessário
+  Adicionados seus arquivos de estilização, reset.css, style.css, entre outros paginas de estilização que achar necessário
 
-**Aviso**
-
-Durante o desenvolvimento o repositório deve permanecer private, após as apresentações poderá ficar público e compartilhar nas redes sociais.
-
----
-
-## Entrega
-
-Faça o push do código para o seu repositório GitHub e implemente-o GitHub pages. Não esqueçam de colocar o repositório como **Private** e adicionar em **Configurações -> Colaboradores e Times**, o time **team-m2-correcoes**. No Canvas, por favor, enviar a url do GitHub Pages: (ex: https://nomedeusuario.github.io/oregon-trail-inheritance), enviar o link do repositório e o nome de todos os integrantes da equipe nos comentários.
