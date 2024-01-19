@@ -1,5 +1,5 @@
-# Projeto Capstone
-OBS: O projeto foi realizado no github do curso, faltando o versionamento realizado. 
+# OBS
+ O projeto foi realizado no github do curso, faltando o versionamento realizado. 
 
 # Kenzie Habit
 
