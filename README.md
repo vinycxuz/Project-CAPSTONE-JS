@@ -32,9 +32,6 @@ O Kenzie Habit é um programa que visa a aplicação prática de diversos concei
 
 - **Popup de Erro para as Requisições:** Exibição de popups de erro para fornecer feedback imediato ao usuário em caso de problemas durante as requisições à API.
 
-## Layout - Kenzie Habit
-O layout do Kenzie Habit foi desenvolvido com base no projeto proposto, e o design pode ser visualizado [aqui](link para o Figma).
-
 ## Organização das Pastas
 O projeto está organizado nas seguintes pastas:
 
